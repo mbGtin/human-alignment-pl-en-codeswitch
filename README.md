@@ -50,40 +50,32 @@ All examples are stored in **JSONL (JSON Lines)** format — each line contains 
 
 ## Files Included
 
-File	Description
-
-README.md	Project overview and documentation
-guidelines.md	Annotation and evaluation instructions
-data/sample.jsonl	Sample dataset (Polish-English dialogues)
-results/report.md	Evaluation summary and insights
-
+| File | Description |
+|------|--------------|
+| [`README.md`](./README.md) | Project overview and documentation |
+| [`guidelines.md`](./guidelines.md) | Annotation and evaluation instructions |
+| [`data/sample.jsonl`](./data/sample.jsonl) | Sample dataset (Polish-English dialogues) |
+| [`results/report.md`](./results/report.md) | Evaluation summary and insights |
 
 
 
  Data Card (Pilot)
 
-Languages: Polish-English (code-switch)
-
-Domain: UX frustration & conversational repair
-
-Samples: 8 (pilot) — plan: 50 (v0.2), 100 + (v1.0)
-
-Fields: user_utterance, intent, tone_user, model_A/B, eval_pair_preference, rationale, edit_best
-
-Safety: de-identified, no personal data
-
-License: MIT License
+- **Languages:** Polish-English (code-switch)  
+- **Domain:** UX frustration & conversational repair  
+- **Samples:** 8 (pilot) — plan: 50 (v0.2), 100+ (v1.0)  
+- **Fields:** `user_utterance`, `intent`, `tone_user`, `model_A/B`, `eval_pair_preference`, `rationale`, `edit_best`  
+- **Safety:** de-identified, no personal data  
+- **License:** [MIT License](./LICENSE)
 
 
+# Example Use Cases
+
+- Evaluating **AI model empathy** in multilingual frustration contexts.  
+- Improving **RLHF datasets** for mixed-language users.  
+- Testing **AI consistency** when dealing with sarcasm or irony.
 
 
-Example Use Cases
-
-Evaluating AI model empathy in multilingual frustration contexts.
-
-Improving RLHF datasets for mixed-language users.
-
-Testing AI consistency when dealing with sarcasm or irony.
 
 
 
