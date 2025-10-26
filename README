@@ -1,0 +1,36 @@
+# Human-in-the-Loop Alignment  
+### Polish-English Code-Switching Dialogues  
+
+> **“A programmer never asks why it works — it works, that’s enough.  
+> Why it doesn’t? That’s the user’s question.”**
+
+
+ Project Overview
+This project explores how conversational AI handles **mixed-language dialogues (Polish-English)**, **sarcasm**, and **emotional tone** — the kind of natural communication real users produce when technology stops behaving as expected.  
+
+The goal is to simulate realistic **AI Training Data** for *human-in-the-loop alignment* — where people help AI models understand not just what is said, but what is meant.  
+
+
+ Objectives
+- Model and annotate **code-switching** (PL/EN mix) in natural dialogues.  
+- Capture **sarcastic, ironic, and emotional** user tones.  
+- Evaluate how AI responses can remain empathetic, concise, and technically correct.  
+- Provide **annotated examples** for prompt-tuning and RLHF evaluation.  
+
+ Why It Matters
+AI systems often misunderstand “imperfect” human speech — especially when languages mix or emotions rise.  
+But that’s exactly when we need them to understand us the most.  
+
+This dataset trains conversational models to handle:  
+- frustration (“update again? really?”),  
+- sarcasm (“oh great, now it works worse than before”),  
+- humor and idioms,  
+- emotional context without losing technical accuracy.  
+
+
+Data Format
+All examples are stored in JSONL (JSON Lines) format — each line contains one dialogue sample and its evaluation fields.
+
+Example:
+```json
+{"id":"cs-0001","user_utterance":"No i super, zrobili update i teraz upload nie działa. Great job, guys.","model_B":"To efekt voice mode. Wyłącz mikrofon → kliknij ‘+’ → ‘Upload file’.","eval_pair_preference":"B","tone_user":["sarcastic","frustrated"],"intent":"report_bug"}
